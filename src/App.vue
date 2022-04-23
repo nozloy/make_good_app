@@ -7,7 +7,7 @@ export default {
     setup()
     {
         let theme = window.Telegram.WebApp.colorScheme;
-        let user = window.Telegram.WebApp.initData.user.username;
+        let user = window.Telegram.WebApp.initData;
         let test = "тест"
         //let user = "юзер"
         //let theme = "тема"
