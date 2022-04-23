@@ -9,8 +9,8 @@ export default {
         //let theme = window.Telegram.WebApp.colorScheme;
         //let user = window.Telegram.WebApp.initParams;
         let test = "тест"
-        let user = "user"
-        let theme = "theme"
+        let user = "юзер"
+        let theme = "тема"
         return {test, user, theme}
     },
     mounted() {
