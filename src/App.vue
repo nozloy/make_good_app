@@ -1,19 +1,21 @@
 <template>
   <v-app>
     <v-main>
-      <user-info/>
+      <menu-table-food/>
     </v-main>
   </v-app>
 </template>
 
 <script>
-import UserInfo from './components/UserInfo.vue';
+//import UserInfo from './components/UserInfoHash.vue';
+import MenuTableFood from './components/MenuTableFood.vue';
 
 export default {
   name: 'App',
 
   components: {
-    UserInfo,
+    //UserInfo,
+    MenuTableFood,
   },
 
   data: () => ({
