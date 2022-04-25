@@ -15,18 +15,18 @@
     </thead>
     <tbody>
       <tr
-        v-for="item in desserts"
+        v-for="item in snacks"
         :key="item.name"
       >
         <td>{{ item.name }}</td>
         <td>{{ item.weight }}</td>
-          <td><v-btn
+          <td><v-btn @click="removeItem(item)"
           size="x-small"
           icon="mdi-chevron-left-circle"
           color="success"
            ></v-btn>
         {{item.quantity}}
-            <v-btn
+            <v-btn @click="addItem(item)"
           size="x-small"
           icon="mdi-chevron-right-circle"
           color="success"
@@ -41,7 +41,7 @@
   export default {
     data () {
       return {
-        desserts: [
+        snacks: [
           {
             name: 'Салат Каприз',
             weight: 159,
@@ -95,6 +95,21 @@
         ],
       }
     },
+    methods:{
+      addItem (item){
+        item.quantity += 1;
+        console.log(item.quantity);
+      },
+      removeItem (item){
+        if(item.quantity > 0){
+        item.quantity -=1;
+        } else {
+          item.quantity = 0;
+        }
+        
+        console.log(item.quantity)
+      }
+    }
   }
 </script>
 
