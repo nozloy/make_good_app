@@ -7,7 +7,7 @@
 </template>
 
 <script>
-import UserInfo from './Components/UserInfo.vue'
+import UserInfo from './components/UserInfo.vue';
 
 export default {
   name: 'App',
