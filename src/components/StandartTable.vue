@@ -31,7 +31,7 @@
 
     <v-dialog
       v-model="item.dialog"
-      max-width="100%"
+      max-width="450"
     >
       <v-card
       class="mx-auto"
