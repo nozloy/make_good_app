@@ -60,14 +60,14 @@
           @click="removeItem(item)"  
           icon="mdi-minus-circle"
           color="error"
-          size="x-large"
+          size="x-small"
            ></v-btn>
             <v-btn
         variant="text"  
           @click="addItem(item)"  
           icon="mdi-plus-circle"
           color="success"
-          size="x-large"
+          size="x-small"
            ></v-btn>
           </td>
       </tr>
