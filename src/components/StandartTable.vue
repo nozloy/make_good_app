@@ -7,9 +7,6 @@
           Холодные закуски
         </th>
         <th class="text-left">
-          Порция
-        </th>
-        <th class="text-left">
           Количество
         </th>
       </tr>
@@ -20,22 +17,22 @@
         :key="item.name"
       >
         <td>{{ item.name }}</td>
-        <td>{{ item.weight }}</td>
           <td>
-            {{ item.quantity }}
+            
             <v-btn
         variant="text"  
           @click="removeItem(item)"  
-          size="small"
           icon="mdi-minus-circle"
           color="error"
-           ></v-btn>  
+          size="large"
+           ></v-btn> 
+           {{ item.quantity }} 
             <v-btn
         variant="text"  
           @click="addItem(item)"  
-          size="small"
           icon="mdi-plus-circle"
           color="success"
+          size="large"
            ></v-btn>
           </td>
       </tr>
