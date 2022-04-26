@@ -1,5 +1,13 @@
 <template>
 <div class="standarttable">
+        <v-card>
+        <v-card-text>
+          Lorem ipsum
+        </v-card-text>
+        <v-card-actions>
+          <v-btn color="green" block @click="dialog = false">Закрыть</v-btn>
+        </v-card-actions>
+      </v-card>
     <v-table>
     <thead>
       <tr>
@@ -16,22 +24,30 @@
         v-for="item in snacks"
         :key="item.name"
       >
-        <td>{{ item.name }}</td>
+        <td @click="expand(item)">
+            {{ item.name }} <div v-show="item.quantity > 0" style="display: inline-block;">
+            <v-chip
+          color="success"
+          density="compact"
+        ><strong>{{item.quantity}}</strong>
+        </v-chip>
+            </div>
+            
+        </td>
           <td class="text-center">  
             <v-btn
         variant="text"  
           @click="removeItem(item)"  
           icon="mdi-minus-circle"
           color="error"
-          size="large"
-           ></v-btn> 
-           {{ item.quantity }} 
+          size="x-large"
+           ></v-btn>
             <v-btn
         variant="text"  
           @click="addItem(item)"  
           icon="mdi-plus-circle"
           color="success"
-          size="large"
+          size="x-large"
            ></v-btn>
           </td>
       </tr>
@@ -64,7 +80,10 @@ export default {
         } else {
           item.quantity = 0;
         }
-      }
+      },
+    //   expand(item){
+
+    //   }
     }
     
 
