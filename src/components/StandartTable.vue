@@ -6,7 +6,7 @@
         <th class="text-left">
           Холодные закуски
         </th>
-        <th class="text-center">
+        <th class="text-center" width="35%">
           Количество
         </th>
       </tr>
@@ -17,15 +17,9 @@
         :key="item.name"
       >
         <td>
-  <div class="text-center">
+  <div>
 
-    <v-dialog
-      v-model="dialog"
-    >
-    <template v-slot:activator="{ props }">
-        <div
-          v-bind="props"
-        >
+        <div @click="item.dialog = true">
          {{ item.name }}<div v-show="item.quantity > 0" style="display: inline-block;">
             <v-chip
           color="success"
@@ -34,15 +28,26 @@
         </v-chip>
             </div>
         </div>
-      </template>
 
-
+    <v-dialog
+      v-model="item.dialog"
+    >
       <v-card>
+          <v-img
+            class="align-end text-white"
+            height="300"
+            width="450"
+            :src= "item.imageUrl"
+            cover
+    >
+    <v-card-title>{{item.name}}</v-card-title>
+    </v-img>
         <v-card-text>
-          {{item.weight}}
+          {{item.weight}} <br>
+          {{item.description}}
         </v-card-text>
         <v-card-actions>
-          <v-btn color="green" block @click="dialog = false">Закрыть</v-btn>
+          <v-btn color="green" block @click="item.dialog = false">Закрыть</v-btn>
         </v-card-actions>
       </v-card>
     </v-dialog>

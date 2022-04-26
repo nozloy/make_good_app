@@ -12,55 +12,22 @@ import StandartTable from './StandartTable.vue';
       return {
         snacks: [
           {
-            name: 'Салат Каприз',
-            weight: 159,
+            name: 'Сэндвич с курицей и картофель фри',
+            weight: "500г",
+            description:"Булочка, куриное филе, салат айсберг, огурец, сыр чеддер и сливочно-базиличный соус. Гарнир - картофель фри",
+            imageUrl: "https://eda.yandex/images/3667559/c49afefa1ca7bdd794ff917128d39aab-450x300.jpeg",
             quantity: 0,
+            dialog: false,
           },
           {
-            name: 'Салат Тещин язык',
-            weight: 237,
+            name: 'Салат Цезарь с креветками',
+            weight: "280г",
+            description:"Салат с креветками, томатами черри, гренками, сыром пармезан и соусом Цезарь",
+            imageUrl: "https://eda.yandex/images/3583740/36fb108fd4abb376a6d2392eeb30d6b6-450x300.jpeg",
             quantity: 0,
+            dialog: false,
           },
-          {
-            name: 'Мясное удовольствие',
-            weight: 262,
-            quantity: 0,
-          },
-          {
-            name: 'Салат из печени',
-            weight: 305,
-            quantity: 0,
-          },
-          {
-            name: 'Салат «Фантазия»',
-            weight: 356,
-            quantity: 0,
-          },
-          {
-            name: 'Салат «Мясной»',
-            weight: 375,
-            quantity: 0,
-          },
-          {
-            name: 'Салат Оливье',
-            weight: 392,
-            quantity: 0,
-          },
-          {
-            name: 'Салат «Пикантный»',
-            weight: 408,
-            quantity: 0,
-          },
-          {
-            name: 'Салат «Будапешт»',
-            weight: 452,
-            quantity: 0,
-          },
-          {
-            name: 'Салат "Ассоль"',
-            weight: 518,
-            quantity: 0,
-          },
+
         ],
       }
     },
