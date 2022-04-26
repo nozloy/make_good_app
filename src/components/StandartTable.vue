@@ -33,12 +33,10 @@
       v-model="item.dialog"
     >
       <v-card
-      max-width="550"
+      max-width="490"
       >
           <v-img
             class="align-end text-white"
-            height="100%"
-            width="100%"
             :src= "item.imageUrl"
             cover
     >
