@@ -33,7 +33,7 @@
       v-model="item.dialog"
     >
       <v-card
-      max-width="400"
+      max-width="550"
       >
           <v-img
             class="align-end text-white"
