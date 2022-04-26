@@ -33,6 +33,7 @@
       v-model="item.dialog"
     >
       <v-card
+      class="mx-auto"
       max-width="490"
       >
           <v-img
