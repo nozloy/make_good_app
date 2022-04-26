@@ -34,7 +34,7 @@
     >
       <v-card
       class="mx-auto"
-      max-width="490"
+      max-width="100%"
       >
           <v-img
             class="align-end text-white"
