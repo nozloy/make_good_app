@@ -1,6 +1,7 @@
 <template>
   <v-app>
     <v-main>
+      
       <menu-table-food/>
     </v-main>
   </v-app>
