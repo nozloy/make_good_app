@@ -6,7 +6,7 @@
         <th class="text-left">
           Холодные закуски
         </th>
-        <th class="text-left">
+        <th class="text-center">
           Количество
         </th>
       </tr>
@@ -17,8 +17,7 @@
         :key="item.name"
       >
         <td>{{ item.name }}</td>
-          <td>
-            
+          <td class="text-center">  
             <v-btn
         variant="text"  
           @click="removeItem(item)"  
