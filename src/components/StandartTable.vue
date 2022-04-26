@@ -32,26 +32,9 @@
     <v-dialog
       v-model="item.dialog"
       min-width="100%"
+      min-height="100%"
     >
-      <v-card
-      class="mx-auto"
-      max-width="450"
-      >
-          <v-img
-            class="align-end text-white"
-            :src= "item.imageUrl"
-            cover
-    >
-    <v-card-title>{{item.name}}</v-card-title>
-    </v-img>
-        <v-card-text>
-          {{item.weight}} <br>
-          {{item.description}}
-        </v-card-text>
-        <v-card-actions>
-          <v-btn color="green" block @click="item.dialog = false">Закрыть</v-btn>
-        </v-card-actions>
-      </v-card>
+TEST!!!
     </v-dialog>
   </div>
             
