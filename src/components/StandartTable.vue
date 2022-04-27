@@ -1,5 +1,5 @@
 <template>
-<div class="standarttable" min-width="100%">
+<div class="standarttable">
     <v-table>
     <thead>
       <tr>
@@ -32,7 +32,10 @@
     <v-dialog
       v-model="item.dialog"
       min-width="100%"
+      min-height="100%"
+      transition="dialog-bottom-transition"
     >
+    <template class="v-card">
       <v-card
       class="mx-auto"
       >
@@ -51,6 +54,7 @@
           <v-btn color="green" block @click="item.dialog = false">Закрыть</v-btn>
         </v-card-actions>
       </v-card>
+      </template>
     </v-dialog>
   </div>
             
@@ -115,5 +119,8 @@ export default {
 </script>
 
 <style>
-
+.dialog-bottom-transition-enter-active,
+.dialog-bottom-transition-leave-active {
+  transition: transform .2s ease-in-out;
+}
 </style>
