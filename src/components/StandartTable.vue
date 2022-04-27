@@ -1,5 +1,5 @@
 <template>
-    <v-table width: unset>
+    <v-table @submit.prevent="submit">
     <thead>
       <tr>
         <th class="text-left">
