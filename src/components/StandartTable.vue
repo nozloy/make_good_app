@@ -1,6 +1,5 @@
-<template class ="standarttable">
-<div class="standarttable">
-    <v-table>
+<template>
+    <v-table width: unset>
     <thead>
       <tr>
         <th class="text-left">
@@ -31,7 +30,7 @@
 
     <v-dialog
       v-model="item.dialog"
-      width="unset"
+      fullscreen="true"
       transition="dialog-bottom-transition"
     >
 
@@ -52,9 +51,11 @@
         
         </v-card-title>
     </v-img>
+        <v-card-subtitle class="pt-4">
+      {{item.weight}}
+    </v-card-subtitle>
         <v-card-text>
-          {{item.weight}} <br>
-          {{item.description}}
+         <div>{{item.description}}</div>
         </v-card-text>
         <v-card-actions>
           <v-btn color="green" block @click="item.dialog = false">Закрыть</v-btn>
@@ -84,7 +85,6 @@
       </tr>
     </tbody>
   </v-table>
-</div>
 </template>
 
 <script>
@@ -128,8 +128,5 @@ export default {
 .dialog-bottom-transition-enter-active,
 .dialog-bottom-transition-leave-active {
   transition: transform .2s ease-in-out;
-}
-.standarttable {
-width: unset;
 }
 </style>
