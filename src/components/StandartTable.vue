@@ -38,7 +38,7 @@
       <v-card @click="item.dialog = false"
       class="mx-auto"
       >
-      <Suspense>
+      <Suspense timeout="0">
         <template #default>
                     <v-img
             class="align-end"
@@ -56,12 +56,7 @@
     </v-img>
         </template>
         <template #fallback>
-               <v-progress-circular
-      :size="70"
-      :width="7"
-      color="green"
-      indeterminate
-    ></v-progress-circular>
+<h1>LOADING!</h1>
         </template>
       </Suspense>
         <v-card-subtitle class="pt-4">
