@@ -34,7 +34,7 @@
       transition="dialog-bottom-transition"
     >
 
-      <v-card
+      <v-card @click="item.dialog = false"
       class="mx-auto"
       >
           <v-img
@@ -42,11 +42,11 @@
             :src= "item.imageUrl"
             cover
     >
-    <v-card-title>
+    <v-card-title class="justify-center">
         <v-sheet
-            class="rounded-xl rounded-br-0"
+            class="rounded-xl rounded-br-0 text-center"
             color="green darken-4"
-            style="padding-left: 15px;padding-right: 15px;"
+            style="padding-left: 10px;padding-right: 10px;"
           ><span class="text-white">{{item.name}}</span></v-sheet>
         
         </v-card-title>
