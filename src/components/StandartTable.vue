@@ -46,7 +46,7 @@
     >
     <v-card-title>
         <v-sheet
-            class="rounded-t-xl"
+            class="rounded-xl rounded-br-0"
             color="green darken-4"
             style="padding-left: 15px;padding-right: 15px;"
           ><span class="text-white">{{item.name}}</span></v-sheet>
