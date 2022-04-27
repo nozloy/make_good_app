@@ -31,7 +31,7 @@
     <v-dialog
       v-model="item.dialog"
       fullscreen="true"
-      transition="dialog-bottom-transition"
+      transition="scroll-x-reverse-transition"
     >
 
       <v-card @click="item.dialog = false"
@@ -125,8 +125,8 @@ export default {
 </script>
 
 <style>
-.dialog-bottom-transition-enter-active,
-.dialog-bottom-transition-leave-active {
+.scroll-x-reverse-transition-enter-active,
+.scroll-x-reverse-transition-active {
   transition: transform .2s ease-in-out;
 }
 </style>
