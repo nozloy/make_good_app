@@ -31,8 +31,7 @@
 
     <v-dialog
       v-model="item.dialog"
-      min-width="100%"
-      min-height="100%"
+      width="unset"
       transition="dialog-bottom-transition"
     >
 
