@@ -32,7 +32,6 @@
     <v-dialog
       v-model="item.dialog"
       min-width="100%"
-      fullscreen="true"
     >
       <v-card
       class="mx-auto"
