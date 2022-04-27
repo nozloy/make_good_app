@@ -16,10 +16,8 @@
         v-for="item in snacks"
         :key="item.name"
       >
-        <td>
+        <td @click="item.dialog = true">
   <div>
-
-        <span @click="item.dialog = true">
          {{ item.name }}<div v-show="item.quantity > 0" style="display: inline-block;">
             <v-chip
           color="success"
@@ -27,7 +25,6 @@
         ><strong>{{item.quantity}}</strong>
         </v-chip>
             </div>
-        </span>
 
     <v-dialog
       v-model="item.dialog"
@@ -37,7 +34,7 @@
       <v-card @click="item.dialog = false"
       class="mx-auto"
       >
-      <Suspense timeout="0">
+      <Suspense>
         <template #default>
                     <v-img
             class="align-end"
@@ -55,7 +52,7 @@
     </v-img>
         </template>
         <template #fallback>
-<h1>LOADING!</h1>
+<h4>Загрузка...</h4>
         </template>
       </Suspense>
         <v-card-subtitle class="pt-4">

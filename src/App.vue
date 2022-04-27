@@ -1,19 +1,21 @@
 <template>
         <div>
-      <menu-table-food/>
+      <laser-list/>
         </div>
 </template>
 
 <script>
 //import UserInfo from './components/UserInfoHash.vue';
-import MenuTableFood from './components/MenuTableFood.vue';
+//import MenuTableFood from './components/MenuTableFood.vue';
+import LaserList from './makegood/LaserList.vue';
 
 export default {
   name: 'App',
 
   components: {
     //UserInfo,
-    MenuTableFood,
+    //MenuTableFood,
+    LaserList,
   },
 
   data: () => ({
