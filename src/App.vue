@@ -1,4 +1,7 @@
 <template>
+  <v-app>
+    <v-main>
+      <div class="fullscreen">
   <div class="text-center">
     <v-btn
       color="primary"
@@ -20,6 +23,9 @@
       </v-card>
     </v-dialog>
   </div>
+  </div>
+    </v-main>
+  </v-app>
 </template>
 
 <script>
@@ -39,3 +45,8 @@ export default {
   }),
 }
 </script>
+<style scoped>
+.fullscreen {
+  min-width: none;
+}
+</style>
