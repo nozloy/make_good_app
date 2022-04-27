@@ -46,6 +46,7 @@ import WorksRender from './WorksRender.vue';
             imageUrl: "https://laser.makegood.group/wp-content/uploads/2022/04/photo_2022-04-26_09-56-14.jpg",
             dialog: false,
           },
+          
 
         ],
       }
