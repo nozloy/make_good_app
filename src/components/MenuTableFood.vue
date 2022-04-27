@@ -1,5 +1,18 @@
 <template>
- <standart-table :snacks="snacks"/>
+      <Suspense>
+      <template #default>
+       <standart-table :snacks="snacks"/>
+      </template>
+      <template #fallback>
+      <v-progress-circular
+      :size="70"
+      :width="7"
+      color="green"
+      indeterminate
+    ></v-progress-circular>
+      </template>
+      </Suspense>
+
 </template>
 
 <script>
@@ -27,6 +40,7 @@ import StandartTable from './StandartTable.vue';
             quantity: 0,
             dialog: false,
           },
+          
 
         ],
       }
