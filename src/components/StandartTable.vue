@@ -1,4 +1,4 @@
-<template w-auto>
+<template class ="standarttable">
 <div class="standarttable">
     <v-table>
     <thead>
@@ -129,5 +129,8 @@ export default {
 .dialog-bottom-transition-enter-active,
 .dialog-bottom-transition-leave-active {
   transition: transform .2s ease-in-out;
+}
+.standarttable {
+width: 100%;
 }
 </style>
