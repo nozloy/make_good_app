@@ -19,7 +19,7 @@
         <td>
   <div>
 
-        <div @click="item.dialog = true">
+        <span @click="item.dialog = true">
          {{ item.name }}<div v-show="item.quantity > 0" style="display: inline-block;">
             <v-chip
           color="success"
@@ -27,7 +27,7 @@
         ><strong>{{item.quantity}}</strong>
         </v-chip>
             </div>
-        </div>
+        </span>
 
     <v-dialog
       v-model="item.dialog"
@@ -35,16 +35,23 @@
       min-height="100%"
       transition="dialog-bottom-transition"
     >
-    <template class="v-card">
+
       <v-card
       class="mx-auto"
       >
           <v-img
-            class="align-end text-white"
+            class="align-end"
             :src= "item.imageUrl"
             cover
     >
-    <v-card-title>{{item.name}}</v-card-title>
+    <v-card-title>
+        <v-sheet
+            class="rounded-t-xl"
+            color="green darken-4"
+            style="padding-left: 15px;padding-right: 15px;"
+          ><span class="text-white">{{item.name}}</span></v-sheet>
+        
+        </v-card-title>
     </v-img>
         <v-card-text>
           {{item.weight}} <br>
@@ -54,7 +61,7 @@
           <v-btn color="green" block @click="item.dialog = false">Закрыть</v-btn>
         </v-card-actions>
       </v-card>
-      </template>
+
     </v-dialog>
   </div>
             
