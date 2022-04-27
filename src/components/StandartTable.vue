@@ -1,5 +1,6 @@
 <template>
-    <v-table @submit.prevent="submit">
+<div @submit.prevent="submit">
+    <v-table>
     <thead>
       <tr>
         <th class="text-left">
@@ -85,6 +86,7 @@
       </tr>
     </tbody>
   </v-table>
+  </div>
 </template>
 
 <script>
