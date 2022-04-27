@@ -1,18 +1,5 @@
 <template>
-      <Suspense>
-      <template #default>
        <standart-table :snacks="snacks"/>
-      </template>
-      <template #fallback>
-      <v-progress-circular
-      :size="70"
-      :width="7"
-      color="green"
-      indeterminate
-    ></v-progress-circular>
-      </template>
-      </Suspense>
-
 </template>
 
 <script>
