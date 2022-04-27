@@ -1,5 +1,5 @@
 <template w-auto>
-<div class="standarttable" w-auto>
+<div class="standarttable">
     <v-table>
     <thead>
       <tr>
