@@ -28,45 +28,45 @@
               <v-btn size="small" color="surface-variant" variant="text" icon="mdi-share-variant"></v-btn>
             </v-card-actions>
           </v-card>
-        <v-dialog
-      v-model="work.dialog"
-      transition="scroll-x-reverse-transition"
-    >
 
-      <v-card
-      class="mx-auto"
-      >
-                    <v-img @click="work.dialog = false"
-            class="align-end"
-            :src= "work.imageUrl"
-            cover
-    >
-    <v-card-title class="justify-center">
-        <v-sheet
-            class="rounded-xl rounded-br-0 text-center"
-            color="purple darken-2"
-            style="padding-left: 10px;padding-right: 10px;"
-          ><span class="text-white">{{work.name}}</span></v-sheet>
-        
-        </v-card-title>
-    </v-img>
-        <v-card-subtitle class="pt-4">
-      {{work.buyer}}
-    </v-card-subtitle>
-        <v-card-text @click="work.dialog = false">
-         <div>{{work.description}}</div>
-        </v-card-text>
-        <v-card-actions class="justify-center">
-                <v-btn
-                variant="outlined"
-                color="purple darken-2"
-                prepend-icon="mdi-send"
-                >Написать</v-btn>
- 
-        </v-card-actions>
-      </v-card>
+                    <v-dialog
+                    transition="dialog-bottom-transition"
+                    v-model="work.dialog">
 
-    </v-dialog>
+                <v-card
+                class="mx-auto">
+                        <v-img @click="work.dialog = false"
+                        class="align-end"
+                        :src= "work.imageUrl"
+                        cover>
+                <v-card-title class="justify-center">
+                    <v-sheet
+                        class="rounded-xl rounded-br-0 text-center"
+                        color="purple darken-2"
+                        style="padding-left: 10px;padding-right: 10px;"
+                    ><span class="text-white">{{work.name}}</span></v-sheet>
+                    
+                    </v-card-title>
+                </v-img>
+                    <v-card-subtitle class="pt-4">
+                {{work.buyer}}
+                </v-card-subtitle>
+                    <v-card-text @click="work.dialog = false">
+                    <div>{{work.description}}</div>
+                    </v-card-text>
+                    <v-card-actions
+                    class="justify-center"
+                    style="margin-bottom:15px">
+                            <v-btn
+                            variant="outlined"
+                            color="purple darken-2"
+                            prepend-icon="mdi-send"
+                            >Написать</v-btn>
+            
+                    </v-card-actions>
+                </v-card>
+
+                    </v-dialog>
 
         </v-col>
       </v-row>
@@ -99,5 +99,8 @@ export default {
 </script>
 
 <style>
-
+.dialog-bottom-transition,
+.dialog-bottom-transition {
+  transition: transform .2s ease-in-out;
+}
 </style>
