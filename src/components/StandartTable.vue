@@ -32,7 +32,6 @@
     <v-dialog
       v-model="item.dialog"
       min-width="100%"
-      min-height="100%"
     >
 TEST!!!
     </v-dialog>
