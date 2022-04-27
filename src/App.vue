@@ -1,25 +1,47 @@
 <template>
   <v-app>
     <v-main>
-      <menu-table-food/>
+       <div class="text-center">
+    <v-dialog
+      v-model="dialog"
+    >
+      <template v-slot:activator="{ props }">
+        <v-btn
+          color="primary"
+          v-bind="props"
+        >
+          Open Dialog
+        </v-btn>
+      </template>
+
+      <v-card>
+        <v-card-text>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </v-card-text>
+        <v-card-actions>
+          <v-btn color="primary" block @click="dialog = false">Close Dialog</v-btn>
+        </v-card-actions>
+      </v-card>
+    </v-dialog>
+  </div>
     </v-main>
   </v-app>
 </template>
 
 <script>
 //import UserInfo from './components/UserInfoHash.vue';
-import MenuTableFood from './components/MenuTableFood.vue';
+//import MenuTableFood from './components/MenuTableFood.vue';
 
 export default {
   name: 'App',
 
   components: {
     //UserInfo,
-    MenuTableFood,
+    //MenuTableFood,
   },
 
   data: () => ({
-    //
+    dialog: false,
   }),
 }
 </script>
