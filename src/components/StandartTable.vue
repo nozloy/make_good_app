@@ -74,7 +74,12 @@
       </tr>
     </tbody>
   </v-table>
-</div> 
+</div>
+<v-img
+            class="align-end text-white"
+            src= "https://eda.yandex/images/3667559/c49afefa1ca7bdd794ff917128d39aab-450x300.jpeg"
+            cover
+    ></v-img>
 </template>
 
 <script>
