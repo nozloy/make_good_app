@@ -31,7 +31,6 @@
 
     <v-dialog
       v-model="item.dialog"
-      fullscreen="true"
       transition="scroll-x-reverse-transition"
     >
 
