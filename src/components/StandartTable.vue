@@ -131,6 +131,6 @@ export default {
   transition: transform .2s ease-in-out;
 }
 .standarttable {
-width: 100%;
+width: 800;
 }
 </style>
