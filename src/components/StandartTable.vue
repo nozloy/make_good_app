@@ -65,7 +65,7 @@
          <div>{{item.description}}</div>
         </v-card-text>
         <v-card-actions>
-          <v-btn color="green" block @click="item.dialog = false">Закрыть</v-btn>
+          
         </v-card-actions>
       </v-card>
 
