@@ -9,7 +9,7 @@
           v-for="work in works"
           :key="work.name"
         >
-          <v-card >
+          <v-card>
             <v-img
                 @click="work.dialog = true"
               :src="work.imageUrl"
@@ -30,9 +30,9 @@
           </v-card>
 
                     <v-dialog
-                    transition="dialog-bottom-transition"
-                    v-model="work.dialog">
-
+                    v-model="work.dialog"
+                    transition="scale-transition"
+    >
                 <v-card
                 class="mx-auto">
                         <v-img @click="work.dialog = false"
@@ -99,8 +99,8 @@ export default {
 </script>
 
 <style>
-.dialog-bottom-transition,
-.dialog-bottom-transition {
-  transition: transform .2s ease-in-out;
+.scroll-y-transition,
+.scroll-y-transition {
+  transition: transform 1.9s ease-in-out;
 }
 </style>
