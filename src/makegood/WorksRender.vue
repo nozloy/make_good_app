@@ -31,7 +31,7 @@
 
                     <v-dialog
                     v-model="work.dialog"
-                    transition="scale-transition"
+                    transition="dialog-bottom-transition"
     >
                 <v-card
                 class="mx-auto">
@@ -99,8 +99,7 @@ export default {
 </script>
 
 <style>
-.scroll-y-transition,
-.scroll-y-transition {
-  transition: transform 1.9s ease-in-out;
+.dialog-bottom-transition {
+  transition: all .9s ease;  
 }
 </style>
