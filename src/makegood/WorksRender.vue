@@ -38,6 +38,21 @@
                     >
                   </v-card-title>
                 </v-img>
+                      <v-spacer> </v-spacer>
+    <v-card-actions>
+      <v-btn
+        size="small"
+        color="surface-variant"
+        variant="text"
+        icon="mdi-heart"
+      ></v-btn>
+      <v-btn
+        size="small"
+        color="surface-variant"
+        variant="text"
+        icon="mdi-share-variant"
+      ></v-btn>
+    </v-card-actions>
                 <v-card-subtitle class="pt-4">
                   {{ work.buyer }}
                 </v-card-subtitle>
@@ -49,6 +64,7 @@
                   style="margin-bottom: 15px"
                 >
                   <v-btn
+                    @click="toTelegram"
                     variant="outlined"
                     color="purple darken-2"
                     prepend-icon="mdi-send"
@@ -84,6 +100,11 @@ export default {
     return {};
   },
   methods: {
+    toTelegram() {
+
+      window.open("https://t.me/makegoodgroup");
+
+    },
     onBeforeEnter(el) {
       el.style.opacity = 0;
       el.style.height = "100%";
