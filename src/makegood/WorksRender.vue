@@ -42,7 +42,7 @@
                   {{ work.buyer }}
                 </v-card-subtitle>
                 <v-card-text @click="work.dialog = false">
-                  <div>{{ work.description }}</div>
+                  <div style="white-space:pre-wrap;">{{ work.description }}</div>
                 </v-card-text>
                 <v-card-actions
                   class="justify-center"
