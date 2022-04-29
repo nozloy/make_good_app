@@ -1,5 +1,5 @@
 <template>
-  <div class="v-bodys">
+  <div>
     <laser-list class="v-bodys" />
   </div>
 </template>
